@@ -1,0 +1,6 @@
+function isCur(nowType,item){
+  return nowType==item
+}
+module.exports={
+  isCur:isCur
+}

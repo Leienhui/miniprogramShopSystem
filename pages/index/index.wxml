@@ -1,0 +1,14 @@
+<wxs src="./index.wxs" module="cur"></wxs>
+<view class="contaniner">
+  <view class="slider" style="height:{{windowHeight}}px" >
+      <view class="sliderTitle {{cur.isCur(nowType,item)?'cur':''}}" wx:for="{{products_keys}}" wx:key="index" bindtap="changeNowType" data-nowType="{{item}}" data-id="{{index}}">{{item}}</view>
+  </view>
+  <view class="main" style="height:{{windowHeight}}px">
+    <!-- 左边固定不动，右边向下滑动，不用固定定位 -->
+    <scroll-view scroll-with-animation="{{true}}" scroll-into-view="{{toView}}" bindscroll="scrollHandler" scroll-y="true" style="height:{{windowHeight}}px">
+      <import src="./template.wxml"></import>
+      <template is="myTemplate" wx:for="{{products_keys}}" wx:key="index"
+        data="{{title:item,arr:products[item],toView:toView,index2:index}}" ></template>
+    </scroll-view>
+  </view>
+</view>

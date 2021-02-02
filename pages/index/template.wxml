@@ -1,0 +1,9 @@
+<template name="myTemplate">
+  <view class="title" id="to{{index2}}">{{title}}</view>
+  <view class="arrItem" wx:for="{{arr}}" wx:key="index">
+    <image class="itemPic" src="http://www.aiqianduan.com:56506/images/productpics/{{item.pic}}"></image>
+  <view class="itemName">
+    {{item.name}}
+  </view>
+</view>
+</template>

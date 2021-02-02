@@ -1,0 +1,48 @@
+.contaniner{
+  display: flex;
+}
+.contaniner .slider{
+width: 80px;
+background-color: #eee;
+}
+.contaniner .slider .sliderTitle{
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contaniner .slider .sliderTitle.cur{
+  background-color: rgb(233, 210, 133);
+}
+.contaniner .main{
+flex:1;
+background-color:#ddd;
+padding-left:10px;
+}
+.contaniner .main .title{
+  font-weight: bold;
+  color: rgb(139, 18, 69);
+  padding-left: 15px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.contaniner .main .arrItem{
+  display: flex;
+  margin-bottom: 10px;
+}
+.contaniner .main .arrItem{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px rgba(0,0,0,.5);
+  box-sizing: border-box;
+}
+.contaniner .main .arrItem .itemPic{
+  width: 120px;
+  height: 100px;
+}
+.contaniner .main .arrItem .itemName{
+  font-size: 13px;
+  padding-left: 10px;
+  flex: 1;
+}
